@@ -1,0 +1,13 @@
+table {
+  width: 100%;
+  tr {
+    width: 100%;
+    display: grid;
+
+    td {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+}

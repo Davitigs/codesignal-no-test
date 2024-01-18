@@ -1,0 +1,23 @@
+<tr *ngIf="item">
+  <td>{{ item.id }}</td>
+  <td>{{ item.int }}</td>
+  <td>{{ item.float }}</td>
+  <td class="color" >
+    <span [style.background-color]="item.color">{{ item.color }}</span>
+
+  </td>
+  <td>
+    <table>
+      <tr>
+        <th>ID</th>
+        <th>Color</th>
+      </tr>
+      <tr>
+        <td>{{ item.child.id }}</td>
+        <td class="color">
+          <span [style.background-color]="item.child.color">{{ item.child.color }}</span>
+        </td>
+      </tr>
+    </table>
+  </td>
+</tr>
